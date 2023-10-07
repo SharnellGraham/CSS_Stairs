@@ -14,3 +14,10 @@
     overflow:hidden;
     height:100%;
   }
+  #main-wrapper {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+  }
