@@ -47,3 +47,15 @@
     animation:stairs1 var(--duration) ease-out var(--delay) forwards;
     -moz-animation:stairs1 1s ease-out .3s forwards;
   }
+  @keyframes stairs1 {
+    to {
+      transform: translateZ(var(--endsize));
+    }
+  }
+  .item:after,
+  .item:before {
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    backface-visibility: hidden;
+  }
