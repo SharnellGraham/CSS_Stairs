@@ -3,11 +3,11 @@
     box-sizing:border-box;
   }
   :root {
-    --bg:#4A5240;
-    --stairtop:#ADA8BE;
-    --stairface:#A28497;
-    --stairside:#6F5E5C;
-    --door:#C6CAED;
+    --bg:#ffffff;
+    --stairtop:f7da00;
+    --stairface:#f7da00;
+    --stairside:#f7da00;
+    --door:#ff0000;
   }
   html, body {
     background:var(--bg);
