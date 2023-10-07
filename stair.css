@@ -9,3 +9,8 @@
     --stairside:#6F5E5C;
     --door:#C6CAED;
   }
+  html, body {
+    background:var(--bg);
+    overflow:hidden;
+    height:100%;
+  }
