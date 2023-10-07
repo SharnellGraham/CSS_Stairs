@@ -2,3 +2,10 @@
     margin:0; padding:0;
     box-sizing:border-box;
   }
+  :root {
+    --bg:#4A5240;
+    --stairtop:#ADA8BE;
+    --stairface:#A28497;
+    --stairside:#6F5E5C;
+    --door:#C6CAED;
+  }
