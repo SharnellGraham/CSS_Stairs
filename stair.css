@@ -4,7 +4,7 @@
   }
   :root {
     --bg:#ffffff;
-    --stairtop:f7da00;
+    --stairtop:#f7da00;
     --stairface:#f7da00;
     --stairside:#f7da00;
     --door:#ff0000;
@@ -27,4 +27,23 @@
     transform:rotateX(70deg) rotateZ(40deg);
     transform-style: preserve-3d;
     backface-visibility: hidden;
+  }
+
+  .item {
+    --startsize:0px;
+    --endsize:calc(var(--index) * 30px);
+    --largeur: 100px;
+    --longueur: 40px;
+    --duration:.3s;
+    --delay:calc(var(--index) * .3s);
+    position: relative;
+    display:block;
+    width: var(--largeur);
+    height: var(--longueur);
+    background: var(--stairtop);
+    transform: translateZ(var(--startsize));
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation:stairs1 var(--duration) ease-out var(--delay) forwards;
+    -moz-animation:stairs1 1s ease-out .3s forwards;
   }
