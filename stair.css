@@ -89,3 +89,16 @@
       transform: rotateY(90deg) translateX(var(--endsize)) translateZ(calc(-1 * var(--endsize) + var(--largeur)));
     }
   }
+  .door {
+    --size:170px;
+    --largeur: 100px;
+    --longueur: 20px;
+    position: relative;
+    display:block;
+    width: var(--largeur);
+    height: var(--longueur);
+    background: var(--stairtop);
+    transform:translateZ(320px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
