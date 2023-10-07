@@ -102,3 +102,26 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
   }
+  .door:after,
+.door:before {
+  content: '';
+  position: absolute;
+  top:0; left:0;
+  backface-visibility: hidden;
+}
+.door:after {
+  height: var(--size);
+  width: var(--largeur);
+  transform: rotateX(-90deg) translateY(var(--size)) translateZ(calc(-1 * var(--size) + var(--longueur)));
+  transform-origin: 100% 100%;
+  background-color:var(--door);
+  background-image: radial-gradient(ellipse at 27px 95px, #333 0, #333 4px, transparent 5px);
+  box-shadow: inset 0px 0px 0px 6px var(--stairface), inset 2px -2px 0px 8px var(--stairside), inset 2px -1px 0px 16px var(--stairtop);
+}
+.door:before {
+  height: var(--longueur);
+  width: var(--size);
+  background-color: var(--stairside);
+  transform: rotateY(90deg) translateX(var(--size)) translateZ(calc(-1 * var(--size) + var(--largeur)));
+  transform-origin: 100% 0;
+}
