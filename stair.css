@@ -5,7 +5,7 @@
   :root {
     --bg:#ffffff;
     --stairtop:#f7da00;
-    --stairface:#f7da00;
+    --stairface:#beac21;
     --stairside:#f7da00;
     --door:#ff0000;
   }
@@ -67,4 +67,25 @@
     transform-origin: 100% 100%;
     animation:stairs2 var(--duration) ease-out var(--delay) forwards;
     -moz-animation:stairs2 1s ease-out .3s forwards;
+  }
+  @keyframes stairs2 {
+    to {
+      height: var(--endsize);
+      transform: rotateX(-90deg) translateY(var(--endsize)) translateZ(calc(-1 * var(--endsize) + var(--longueur)));
+    }
+  }
+  .item:before {
+    height: var(--longueur);
+    width: var(--startsize);
+    background-color: var(--stairside);
+    transform: rotateY(90deg) translateX(var(--startsize)) translateZ(calc(-1 * var(--startsize) + var(--largeur)));
+    transform-origin: 100% 0;
+    animation:stairs3 var(--duration) ease-out var(--delay) forwards;
+    -moz-animation:stairs3 1s ease-out .3s forwards;
+  }
+  @keyframes stairs3 {
+    to {
+      width: var(--endsize);
+      transform: rotateY(90deg) translateX(var(--endsize)) translateZ(calc(-1 * var(--endsize) + var(--largeur)));
+    }
   }
