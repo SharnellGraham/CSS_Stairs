@@ -59,3 +59,12 @@
     top:0; left:0;
     backface-visibility: hidden;
   }
+  .item:after {
+    height: var(--startsize);
+    width: var(--largeur);
+    background-color: var(--stairface);
+    transform: rotateX(-90deg) translateY(var(--startsize)) translateZ(calc(-1 * var(--startsize) + var(--longueur)));
+    transform-origin: 100% 100%;
+    animation:stairs2 var(--duration) ease-out var(--delay) forwards;
+    -moz-animation:stairs2 1s ease-out .3s forwards;
+  }
