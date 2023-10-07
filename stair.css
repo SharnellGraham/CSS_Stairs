@@ -21,3 +21,10 @@
     align-items:center;
     height:100%;
   }
+  #stairs {
+    margin-top: 17em;
+    backface-visibility: hidden;
+    transform:rotateX(70deg) rotateZ(40deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
